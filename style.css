@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.container{
+    width: 100%;
+    height: 50rem;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    position: absolute;
+}
+
+.todoscreen{
+    width: 28%;
+    height: 34rem;
+    position: relative;
+    left: 35%;
+    top: 5%;
+    border: 1px solid red;
+    box-shadow: rgb(255, 10, 10) 0px 2px 4px, rgb(255, 4, 4) 0px 2px 13px 1px, rgb(255, 21, 21) 0px -3px 0px inset;
+}
+
+.header{
+    width:100%;
+    height: 30%;
+}
+
+.images{
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/todoscreen.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content{
+    width:100%;
+    height: 70%;
+    position: absolute;
+    /* border: 2px solid rgb(0, 0, 0); */
+}
+
+.listArea{
+    width: 100%;
+    height: 90%;
+    border-top: 2px solid rgb(0, 0, 0);
+    /* position: absolute; */
+    top: 0% ;
+}
+
+.listArea ul li *{
+    font-size: x-large;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.todo-content-list-items{
+    display: flex;
+    flex-direction: row;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
+.text{
+    width: 85%;
+}
+.add-items{
+    width : 100%;
+    height: 10%;
+    position: relative;
+    top: 0%;
+    border: 2px solid rgb(223, 14, 243);
+    display: flex;
+}
+
+.text-area{
+    width: 90%;
+    height: 100%;
+    padding: 5px ;
+    font-size:large ;
+    border: 1px solid black;
+}
+
+.icon {
+    width: 10%;
+    font-size: 30px;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    padding: 2px ;
+}
+
+/* .todo-content-list{ */
+    /* position: absolute; */
+    /* max-width: fit-content;
+    max-height: fit-content; */
+/* } */
+
+.text{
+    margin-left: 3px;
+}
+
+/* .trashIcon { */
+    /* position: relative; */
+    /* position: fixed; */
+    /* margin-left : 15rem; */
+    /* margin-right : 50rem; */
+    /* left: 50px; */
+    /* padding: 1px; */
+/* } */
+
+/* .fa-circle-check {
+    background-color: red;
+    border-bottom: -50px ;
+    align-items: center;
+    justify-content: center;
+}  */
+@media screen and (min-width: 180px) and (max-width:610px) {
+    .container {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    position: absolute;
+    }
+    .todoscreen {
+    width: 90%;
+    height: 34rem;
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    left: 5%;
+    top: 5%;
+    }
+
+}
